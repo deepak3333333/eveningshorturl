@@ -1,8 +1,10 @@
 const express=require("express")
 const mongoose = require("mongoose")
 const router = require("./routes/url")
+
 const app=express()
 const path=require("path")
+const userrouter = require("./routes/users")
 app.use(express.urlencoded({extended:true}))
 //this line for saying that we are using ejs engine
 app.set("view engine","ejs")
@@ -14,6 +16,8 @@ mongoose.connect("mongodb://localhost:27017/urldatabase")
     console.log("connection is successfull")
 })
 app.use("/url",router)
+app.use("/users",userrouter)
+
 
 app.get("/",(req,res)=>{
     return res.render("home")
