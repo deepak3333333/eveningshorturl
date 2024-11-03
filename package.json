@@ -4,8 +4,8 @@
   "description": "this project will short the long url to shorturl and also count the number of visitor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
   "author": "",
   "license": "ISC",

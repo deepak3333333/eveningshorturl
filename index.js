@@ -29,7 +29,7 @@ app.use("/users",userrouter)
 app.get("/",(req,res)=>{
     return res.render("home")
 })
-app.listen(3000,()=>{
+app.listen(8000,()=>{
     console.log("server is running on port 3000");
 }
 )
