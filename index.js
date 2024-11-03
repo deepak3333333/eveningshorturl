@@ -17,10 +17,10 @@ app.set("view engine","ejs")
 // batani kai liya mara views folder kidhar hai
 app.set("views", path.resolve("./views"));
 
-mongoose.connect("mongodb://localhost:27017/urldatabase")
-.then(()=>{
-    console.log("connection is successfull")
-})
+// mongoose.connect("mongodb://localhost:27017/urldatabase")
+// .then(()=>{
+//     console.log("connection is successfull")
+// })
 
 app.use("/url",restrictToUser,router)
 app.use("/users",userrouter)
